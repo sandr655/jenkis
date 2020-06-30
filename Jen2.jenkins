@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Hello') {
          steps {
-            echo 'Hello World'
+           bat label: '', script: 'java -jar C:\\Temp\\untitled14.jar'
          }
       }
    }
