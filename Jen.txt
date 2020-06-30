@@ -1,2 +1,13 @@
-
-java -jar C:\Temp\untitled14.jar
+pipeline {
+  agent any
+  
+  stage {
+  stage('My-jenkinsBuild-steps'){
+    steps {  echo "Start"
+    
+    echo "Doing something.."
+    echo "end"
+    }
+    }
+    }
+    }
