@@ -1,13 +1,11 @@
 pipeline {
-  agent any
-  
-  stage {
-  stage('My-jenkinsBuild-steps'){
-    steps {  echo "Start"
-    
-    echo "Doing something.."
-    echo "end"
-    }
-    }
-    }
-    }
+   agent any
+
+   stages {
+      stage('Hello') {
+         steps {
+            echo 'Hello World'
+         }
+      }
+   }
+}
